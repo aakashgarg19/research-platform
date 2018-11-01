@@ -1,0 +1,36 @@
+<div class="container">
+    <div  class="subContainer">
+      <div *ngFor="let category of data" class="category">
+        <div class="title">{{category.title}}
+            <span class="titleIcon" *ngIf="category.title == 'Upcoming Events'">
+                <i title="Add" class="fas fa-plus-circle"></i>
+            </span>
+        </div>
+        <div class="countDiv" *ngIf="category.count > 0">
+          <span>{{category.count}}</span>
+        </div>
+        <ol *ngIf="category.dataArray.length > 0" class="itemsContainer">
+          <li  class="data" *ngFor="let items of category.dataArray">
+            <span (click) = "openItem(category.itemName)"class="item">
+              {{items}}
+            </span>
+            <span *ngIf="category.approveReject" class="approveReject">
+                <i title="Approve" class="fas fa-check"></i>
+                <i title="Reject" class="fas fa-times"></i>
+            </span>
+            <span *ngIf="category.title == 'Upcoming Events'" class="approveReject">
+                <i title="Delete" class="fas fa-trash"></i>
+            </span>
+          </li>
+        </ol>
+        <div class="noItems" *ngIf="category.count == 0">
+          <span>No Results Found</span>
+        </div>
+        <div *ngIf="category.count !== 0" class="viewAll">
+          <span>View All</span>
+        </div>
+      </div>
+      <div class="category invisible"></div>
+      <div class="category invisible"></div>
+    </div>
+  </div>

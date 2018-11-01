@@ -1,0 +1,25 @@
+<div class="container">
+  <div  class="subContainer">
+    <div class="category newContainer">
+      <i class="fa fa-plus newAdd"></i>
+    </div>
+    <div *ngFor="let category of data" class="category">
+      <div class="title">{{category.title}}</div>
+      <div class="countDiv" *ngIf="category.count > 0">
+        <span>{{category.count}}</span>
+      </div>
+      <ol *ngIf="category.dataArray.length > 0" class="itemsContainer">
+        <li  class="data" *ngFor="let items of category.dataArray">
+          <span (click) = "openItem(category.itemName)"class="item">{{items}}</span>
+        </li>
+      </ol>
+      <div class="noItems" *ngIf="category.count == 0">
+        <span>No Results Found</span>
+      </div>
+      <div *ngIf="category.count !== 0" class="viewAll">
+        <span>View All</span>
+      </div>
+    </div>
+    <div class="category invisible"></div>
+  </div>
+</div>

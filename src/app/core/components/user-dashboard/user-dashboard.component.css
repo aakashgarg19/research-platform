@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+}
+
+.subContainer {
+  display: flex;
+  padding: 1em;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 31%;
+  justify-content: center;
+  padding: 0em;
+  border: 2px solid blueviolet;
+  border-radius: 2em;
+  margin: .5em;
+  min-height: 21em;
+}
+
+.newAdd {
+  font-size: 9em;
+}
+
+.newContainer {
+  justify-content: center;
+  align-items: center;
+  color: blueviolet;
+}
+
+.title {
+  display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-weight: bold;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.countDiv {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin: auto;
+  height: 3em;
+  align-items: center;
+  border-radius: 50%;
+  border: 4px solid blueviolet;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.noItems{
+  height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.itemsContainer {
+  margin: 2em 0em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.data {
+  text-decoration: underline;
+  cursor: -webkit-grab;
+}
+
+.viewAll {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding: .5em;
+  text-decoration: underline;
+  cursor: -webkit-grab;
+}

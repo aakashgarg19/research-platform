@@ -12,7 +12,7 @@ export class CategoriesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+    this.initializeCategoriesArray();
   }
 
   public initializeCategoriesArray() {
@@ -27,13 +27,13 @@ export class CategoriesComponent implements OnInit {
         name: 'Publish White Paper',
         description: 'Upload white paper written by you and publish it to the community.',
         route: 'whitePaper',
-        bannerClass: 'fal fa-file'
+        bannerClass: 'far fa-file'
       },
       {
         name: 'Upload CV/Resume',
         description: 'Upload your CV to get visibility to potential recruiters.',
         route: 'uploadResume',
-        bannerClass: 'fas fa-newspaper'
+        bannerClass: 'fas fa-upload'
       },
       {
         name: 'Upcoming Events',

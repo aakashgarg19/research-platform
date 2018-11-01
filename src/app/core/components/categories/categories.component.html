@@ -1,8 +1,8 @@
 <div class="container">
-  <div *ngFor="let category of categories" class="category">
-    <div class="categoryContainer">
+  <div class="category">
+    <div  *ngFor="let category of categories" class="categoryContainer">
       <div class="bannerImage">
-
+        <i  [class]="category.bannerClass"></i>
       </div>
       <div class="categoryData">
         <div class="categoryHeader">
@@ -11,6 +11,9 @@
         <div class="categoryDescription">
           {{category.description}}
         </div>
+      </div>
+      <div class="categoryArrow">
+          <i class="fas fa-arrow-circle-right"></i>
       </div>
     </div>
   </div>

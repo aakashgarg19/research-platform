@@ -1,0 +1,33 @@
+.childContainer {
+  flex-basis: 44%;
+  justify-content: center;
+  display: flex;
+  border: 2px solid blueviolet;
+  border-radius: 2em;
+  background-color: whitesmoke;
+  height: 14em;
+  align-items: center;
+  font-weight:bold;
+}
+
+.smallContainer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.container {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uploadIcon {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: blueviolet;
+  margin-top: .5em;
+}

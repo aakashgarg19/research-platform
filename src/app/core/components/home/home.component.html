@@ -1,0 +1,22 @@
+<slideshow [height]="height"
+[minHeight]="'50vh'"
+[backgroundSize]="'100vw 100vh'"
+[autoPlay]="true"
+[showArrows]="false"
+[imageUrls]="imageUrlArray"></slideshow>
+<div class="container">
+    <!-- <img src="../../../../assets/images/PublishArticle.jpg"/> -->
+  <div (click)="uploadFile()" class="childContainer">
+    <div class="category">
+      <input type="file" (change)="uploadFile(true)" id="resumeUploadBox" hidden/>
+      <div>Upload Resume</div>
+      <div class="uploadIcon"><i class="fas fa-upload"></i></div>
+    </div>
+  </div>
+  <div class="smallContainer">
+      <div>OR</div>
+  </div>
+  <div class="childContainer">
+      <app-login></app-login>
+  </div>
+</div>

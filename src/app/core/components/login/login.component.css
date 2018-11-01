@@ -1,0 +1,29 @@
+.loginDiv {
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container {
+  width: 23em;
+  display: flex;
+  flex-direction: column;
+  height: 10em;
+  justify-content: space-around;
+}
+.loginDiv>input{
+  height: 2em;
+    border-radius: .5em;
+    border: 1px solid blueviolet;
+}
+.loginDivButton>button{
+  background-color: purple;
+  color: white;
+  height: 3em;
+  width: 6em;
+  border-radius: 1em;
+  margin: 1em;
+}
+.loginDivButton {
+  display: flex;
+  justify-content: center;
+}
